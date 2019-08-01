@@ -1,0 +1,19 @@
+<div class="form_body">
+    <ul class="button_list">
+        <li><input type="button" value="SignUp" (click)="showAuth(0)"/></li>
+        <li><input type="button" value="Login" (click)="showAuth(2)"></li>
+    </ul>
+    <form [formGroup]="genform">
+        <input type="text" name="full_name" placeholder="Enter Name" formControlName="fullName" *ngIf="fullName"/>
+        <input type="number" name="age" placeholder="Enter Age" formControlName="age" *ngIf="age"/>
+        <input type="text" name="email" placeholder="Enter Email" formControlName="email"/>
+        <input type="password" name="password" placeholder="********" formControlName="password"/>
+        <input type="number" name="contact" placeholder="Contact" formControlName="contact" *ngIf="contact"/>
+        <!-- <select>
+            <option>Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select> -->
+        <input type="submit" value="Submit"/>
+    </form>
+</div>
