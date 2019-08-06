@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HerosComponent } from './heros/heros.component';
 import { LandingComponent } from './landing/landing.component';
 import { FormComponent } from './form/form.component';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 const routes: Routes = [
   {path : 'heros', component : HerosComponent },
   {path : '', component : LandingComponent },
-  {path : 'form', component : FormComponent }
+  {path : 'form', component : FormComponent },
+  {path : 'lifecycle', component : LifeCycleComponent}
 ];
 
 @NgModule({

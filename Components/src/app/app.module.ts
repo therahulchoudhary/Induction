@@ -8,13 +8,15 @@ import { HerosComponent } from './heros/heros.component';
 import { LandingComponent } from './landing/landing.component';
 import { FormComponent } from './form/form.component';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HerosComponent,
     LandingComponent,
-    FormComponent
+    FormComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
