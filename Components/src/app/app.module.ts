@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HerosComponent } from './heros/heros.component';
 import { LandingComponent } from './landing/landing.component';
 import { FormComponent } from './form/form.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

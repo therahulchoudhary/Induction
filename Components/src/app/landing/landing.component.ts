@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { USERS } from '../users/mock-users';
+import { UserService } from '../users/user.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,8 +9,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-
-  constructor(public router: Router) { }
+  users = USERS;
+  constructor(public router: Router,userService: UserService) {
+    this.users = userService.getUsers();
+   }
 
   ngOnInit() {
   }

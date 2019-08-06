@@ -1,3 +1,7 @@
 <h3><a routerLink="/heros">Click Here for form</a></h3>
 <button (click)="navigateWithState('signup')">Signup</button>
 <button (click)="navigateWithState('login')">Login</button>
+<h2>Dependency Injection</h2>
+<div *ngFor="let user of users">
+   {{user.id}} - {{user.name}} - {{user.age}}
+</div>
