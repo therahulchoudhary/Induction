@@ -7,20 +7,25 @@ import { AppComponent } from './app.component';
 import { HerosComponent } from './heros/heros.component';
 import { LandingComponent } from './landing/landing.component';
 import { FormComponent } from './form/form.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { QuestionComponent } from './question/question.component';
+import { QuestionService } from './middlewares/question.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HerosComponent,
     LandingComponent,
-    FormComponent
+    FormComponent,
+    DynamicFormComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [QuestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
