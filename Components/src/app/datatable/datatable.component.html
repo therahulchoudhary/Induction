@@ -1,0 +1,18 @@
+<table id="table" class="table table-stripped">
+    <thead>
+        <tr>
+            <th scope="col">S.NO.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Contact</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of users;index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.age | number}}</td>
+            <td>{{user.contact | number}}</td>
+        </tr>
+    </tbody>
+</table>

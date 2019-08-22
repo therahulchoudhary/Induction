@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DataTablesModule } from 'angular-datatables';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +15,7 @@ import { QuestionComponent } from './question/question.component';
 import { QuestionService } from './middlewares/question.service';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FileuploadService } from './middlewares/fileupload.service';
+import { DatatableComponent } from './datatable/datatable.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +25,15 @@ import { FileuploadService } from './middlewares/fileupload.service';
     FormComponent,
     DynamicFormComponent,
     QuestionComponent,
-    FileUploadComponent
-  ],
+    FileUploadComponent,
+    DatatableComponent,
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule,
+    DataTablesModule
   ],
   providers: [QuestionService,FileuploadService],
   bootstrap: [AppComponent]
