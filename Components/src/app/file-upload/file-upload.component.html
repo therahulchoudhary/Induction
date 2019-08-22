@@ -1,0 +1,5 @@
+    <input type="file" name="" (change)="onUpload($event.target.files)" />
+       <br/>
+        <ng-container *ngIf="validator">
+        <p style="color:red;">File type not valid</p>
+        </ng-container>
