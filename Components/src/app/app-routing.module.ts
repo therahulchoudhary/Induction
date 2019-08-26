@@ -7,6 +7,7 @@ import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { QuestionComponent } from './question/question.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
 
 const routes: Routes = [
   {path : 'heros', component : HerosComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path : 'form', component : FormComponent },
   {path : 'dynamicform', component : DynamicFormComponent },
   {path : 'questions', component : QuestionComponent },
-  {path : 'fileupload', component : FileUploadComponent }
+  {path : 'fileupload', component : FileUploadComponent },
+  {path : 'rxjs', component : RxjsObservableComponent}
 ];
 
 @NgModule({

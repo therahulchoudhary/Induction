@@ -12,6 +12,7 @@ import { QuestionComponent } from './question/question.component';
 import { QuestionService } from './middlewares/question.service';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { FileuploadService } from './middlewares/fileupload.service';
+import { RxjsObservableComponent } from './rxjs-observable/rxjs-observable.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FileuploadService } from './middlewares/fileupload.service';
     FormComponent,
     DynamicFormComponent,
     QuestionComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    RxjsObservableComponent
   ],
   imports: [
     BrowserModule,
